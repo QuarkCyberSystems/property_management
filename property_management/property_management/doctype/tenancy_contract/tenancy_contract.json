@@ -1,0 +1,339 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Prompt",
+ "creation": "2021-08-22 10:21:28.467471",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "status",
+  "rental_units",
+  "column_break_4",
+  "company",
+  "building",
+  "rental_units_section",
+  "sb_terms",
+  "start_date",
+  "cb_date",
+  "end_date",
+  "grace_period",
+  "ejari",
+  "details",
+  "property_usage",
+  "owner_name",
+  "landlord_name",
+  "tenant_name",
+  "tenant_email",
+  "landlord_email",
+  "tenant_phone",
+  "landlord_phone",
+  "column_break_19",
+  "building_name",
+  "location",
+  "property_no",
+  "premise_no",
+  "property_size",
+  "property_type",
+  "plot_no",
+  "payment_section_section",
+  "annual_rent",
+  "contract_value",
+  "security_deposit",
+  "mode_of_payment",
+  "column_break_27",
+  "pay_cycle",
+  "terms_section",
+  "additional_terms"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Inactive\nActive"
+  },
+  {
+   "fieldname": "sb_terms",
+   "fieldtype": "Section Break",
+   "label": "Contract Period"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "cb_date",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "details",
+   "fieldtype": "Section Break",
+   "label": "Tenancy Details"
+  },
+  {
+   "fieldname": "property_usage",
+   "fieldtype": "Select",
+   "label": "Property Usage",
+   "options": "Industrial\nCommercial\nResidential"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "owner_name",
+   "fieldtype": "Link",
+   "label": "Owner Name",
+   "options": "Owners and Landlords"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "landlord_name",
+   "fieldtype": "Link",
+   "label": "Landlord Name",
+   "options": "Owners and Landlords"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "tenant_name",
+   "fieldtype": "Data",
+   "label": "Tenant Name"
+  },
+  {
+   "fetch_from": "customer.contact_email",
+   "fieldname": "tenant_email",
+   "fieldtype": "Data",
+   "label": "Tenant Email"
+  },
+  {
+   "fieldname": "landlord_email",
+   "fieldtype": "Data",
+   "label": "Landlord Email"
+  },
+  {
+   "fetch_from": "customer.contact_no",
+   "fieldname": "tenant_phone",
+   "fieldtype": "Data",
+   "label": "Tenant Phone"
+  },
+  {
+   "fieldname": "landlord_phone",
+   "fieldtype": "Data",
+   "label": "Landlord Phone"
+  },
+  {
+   "fetch_from": "building.building_name",
+   "fetch_if_empty": 1,
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building Name"
+  },
+  {
+   "fetch_from": "rental_units.location",
+   "fetch_if_empty": 1,
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "property_size",
+   "fieldtype": "Data",
+   "label": "Property Size"
+  },
+  {
+   "fetch_from": "rental_units.property_type",
+   "fieldname": "property_type",
+   "fieldtype": "Data",
+   "label": "Property Type"
+  },
+  {
+   "fetch_from": "rental_units.plot_no",
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No"
+  },
+  {
+   "fieldname": "annual_rent",
+   "fieldtype": "Currency",
+   "label": "Annual Rent"
+  },
+  {
+   "fieldname": "contract_value",
+   "fieldtype": "Currency",
+   "label": "Contract Value"
+  },
+  {
+   "fieldname": "security_deposit",
+   "fieldtype": "Currency",
+   "label": "Security Deposit"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Mode of Payment",
+   "options": "Mode of Payment"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "payment_section_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Section"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "terms_section",
+   "fieldtype": "Section Break",
+   "label": "Terms"
+  },
+  {
+   "fieldname": "rental_units",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Rental Unit",
+   "options": "Rental Units"
+  },
+  {
+   "fieldname": "pay_cycle",
+   "fieldtype": "Select",
+   "label": "Pay Cycle",
+   "options": "\n1\n2\n3\n4\n6\n12"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "rental_units.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grace_period",
+   "fieldtype": "Data",
+   "label": "Grace Period"
+  },
+  {
+   "fieldname": "rental_units_section",
+   "fieldtype": "Table",
+   "options": "Multiple Units"
+  },
+  {
+   "fieldname": "additional_terms",
+   "fieldtype": "Table",
+   "label": "Additional Terms",
+   "options": "Additional Terms Table"
+  },
+  {
+   "fieldname": "building",
+   "fieldtype": "Link",
+   "label": "Building",
+   "options": "Building"
+  },
+  {
+   "fieldname": "property_no",
+   "fieldtype": "Data",
+   "label": "Property No"
+  },
+  {
+   "fieldname": "premise_no",
+   "fieldtype": "Data",
+   "label": "Premise No"
+  },
+  {
+   "fieldname": "ejari",
+   "fieldtype": "Data",
+   "label": "Ejari"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-26 16:59:48.381173",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Tenancy Contract",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Property Executive",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "customer",
+ "track_changes": 1
+}

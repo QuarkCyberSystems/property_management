@@ -1,0 +1,210 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{building_no}-{unit_no}",
+ "creation": "2021-07-30 16:02:29.430226",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "building_no",
+  "owner_name",
+  "landlord_name",
+  "status",
+  "column_break_5",
+  "company",
+  "building_details_section",
+  "territory",
+  "location",
+  "property_type",
+  "property_no",
+  "plot_no",
+  "premise_no",
+  "column_break_3",
+  "building_name",
+  "details_section",
+  "unit_no",
+  "area",
+  "no_of_bed_rooms",
+  "no_of_baths",
+  "picture",
+  "account_no_section",
+  "emicool_ac",
+  "dewa_ac"
+ ],
+ "fields": [
+  {
+   "fieldname": "building_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Building No",
+   "options": "Building"
+  },
+  {
+   "fieldname": "owner_name",
+   "fieldtype": "Link",
+   "label": "Owner Name",
+   "options": "Owners and Landlords"
+  },
+  {
+   "fieldname": "landlord_name",
+   "fieldtype": "Link",
+   "label": "Landlord Name",
+   "options": "Owners and Landlords"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Vacant\nOccupied"
+  },
+  {
+   "fieldname": "building_details_section",
+   "fieldtype": "Section Break",
+   "label": "Building Details"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fetch_from": "buidling_no.area",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Data",
+   "label": "Property Type"
+  },
+  {
+   "fieldname": "property_no",
+   "fieldtype": "Data",
+   "label": "Property No"
+  },
+  {
+   "fetch_from": "building_no.plot_no",
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building Name"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "unit_no",
+   "fieldtype": "Data",
+   "label": "Unit No"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "no_of_bed_rooms",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "No of Bed rooms"
+  },
+  {
+   "fieldname": "no_of_baths",
+   "fieldtype": "Data",
+   "label": "No of Baths"
+  },
+  {
+   "fieldname": "picture",
+   "fieldtype": "Attach Image",
+   "label": "Picture"
+  },
+  {
+   "fieldname": "premise_no",
+   "fieldtype": "Data",
+   "label": "Premise No"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "building_no.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "account_no_section",
+   "fieldtype": "Section Break",
+   "label": "Account No"
+  },
+  {
+   "fieldname": "emicool_ac",
+   "fieldtype": "Data",
+   "label": "Emicool Ac"
+  },
+  {
+   "fieldname": "dewa_ac",
+   "fieldtype": "Data",
+   "label": "Dewa Ac"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-16 12:31:32.195555",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Rental Units",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -89,13 +89,12 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+ 	"Sales Invoice": {
+ 		"on_submit": "property_management.property_management.doctype.cheques.cheques.create_cheque"
+ 		
+	}
+ }
 
 # Scheduled Tasks
 # ---------------

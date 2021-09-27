@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_events_in_timeline": 1,
+ "allow_rename": 1,
+ "autoname": "field:cheque_no",
+ "creation": "2021-08-22 11:23:48.911978",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "tenancy_contract",
+  "date",
+  "cheque_date",
+  "cheque_no",
+  "status",
+  "amount",
+  "column_break_4",
+  "payment_entry",
+  "bounce_memo",
+  "new_deposit_date",
+  "sales_invoice",
+  "accounting_details_section",
+  "holding_account",
+  "clearing_account",
+  "legal_section",
+  "tenant_comm",
+  "legal_comm"
+ ],
+ "fields": [
+  {
+   "fieldname": "tenancy_contract",
+   "fieldtype": "Link",
+   "label": "Tenancy Contract",
+   "options": "Tenancy Contract"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Received Date"
+  },
+  {
+   "fieldname": "cheque_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Clearing Date"
+  },
+  {
+   "fieldname": "cheque_no",
+   "fieldtype": "Data",
+   "label": "Cheque No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "In Hand\nCleared\nOn Hold\nBounced\nLegal"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_entry",
+   "fieldtype": "Link",
+   "label": "Payment Entry",
+   "options": "Payment Entry"
+  },
+  {
+   "fieldname": "bounce_memo",
+   "fieldtype": "Data",
+   "label": "Bounce Memo"
+  },
+  {
+   "fieldname": "new_deposit_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "New Deposit Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legal_section",
+   "fieldtype": "Section Break",
+   "label": "Legal"
+  },
+  {
+   "fieldname": "tenant_comm",
+   "fieldtype": "Text Editor",
+   "label": "Tenant Comm"
+  },
+  {
+   "fieldname": "legal_comm",
+   "fieldtype": "Text Editor",
+   "label": "Legal Comm"
+  },
+  {
+   "fieldname": "accounting_details_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Details"
+  },
+  {
+   "fieldname": "holding_account",
+   "fieldtype": "Link",
+   "label": "Holding Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "clearing_account",
+   "fieldtype": "Link",
+   "label": "Clearing Account",
+   "options": "Account"
+  },
+  {
+   "fetch_from": "tenancy_contract.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-31 08:40:17.794311",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Cheques",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

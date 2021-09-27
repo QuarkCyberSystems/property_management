@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "creation": "2021-09-01 12:30:32.344512",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "building",
+  "rental_unit"
+ ],
+ "fields": [
+  {
+   "fieldname": "building",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Building",
+   "options": "Building"
+  },
+  {
+   "fieldname": "rental_unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Rental Unit",
+   "options": "Rental Units"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-13 08:05:55.467123",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Multiple Units",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

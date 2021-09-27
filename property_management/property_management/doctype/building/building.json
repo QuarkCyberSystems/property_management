@@ -1,0 +1,264 @@
+{
+ "actions": [],
+ "autoname": "field:building_number",
+ "creation": "2021-07-29 12:00:53.342595",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "building_number",
+  "makani_number",
+  "plot_no",
+  "building_name",
+  "building_owner_name",
+  "address",
+  "area",
+  "company",
+  "title_deed_expiry",
+  "column_break_4",
+  "premise_no_1",
+  "premise_no_2",
+  "city",
+  "building_type",
+  "account_nos_section",
+  "emicool_ac_no",
+  "dewa_ac_no",
+  "specifications_section",
+  "no_of_floors",
+  "total_no_of_units",
+  "total_car_spaces",
+  "column_break_6",
+  "no_of_studio",
+  "no_1bhk",
+  "no_2bhk",
+  "no_3bhk",
+  "otherdetails_sectionbreak",
+  "other_details",
+  "images_section",
+  "image_1",
+  "image_2",
+  "rental_units_button"
+ ],
+ "fields": [
+  {
+   "fieldname": "building_number",
+   "fieldtype": "Data",
+   "label": "Building Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "makani_number",
+   "fieldtype": "Data",
+   "label": "Makani Number"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Area",
+   "reqd": 1
+  },
+  {
+   "fieldname": "building_owner_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Building Owner Name"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plot No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "building_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Building Type",
+   "options": "Commercial, Warehouse, Office\nTown House Villas\nLabor Accommodation\nRetail Shops\nCommercial, Residential\nCommercial, Retail Shops\nResidential\nCommercial\nWarehouse\nCentral Store"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "specifications_section",
+   "fieldtype": "Section Break",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "no_of_floors",
+   "fieldtype": "Data",
+   "label": "No of Floors"
+  },
+  {
+   "fieldname": "total_no_of_units",
+   "fieldtype": "Data",
+   "label": "Total No of Units"
+  },
+  {
+   "fieldname": "total_car_spaces",
+   "fieldtype": "Data",
+   "label": "Total Car Spaces"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_studio",
+   "fieldtype": "Data",
+   "label": "No of Studio Apertments"
+  },
+  {
+   "fieldname": "no_1bhk",
+   "fieldtype": "Data",
+   "label": "No. of 1BHK"
+  },
+  {
+   "fieldname": "no_2bhk",
+   "fieldtype": "Data",
+   "label": "No. of 2BHK"
+  },
+  {
+   "fieldname": "no_3bhk",
+   "fieldtype": "Data",
+   "label": "No. of 3 BHK"
+  },
+  {
+   "fieldname": "otherdetails_sectionbreak",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "other_details",
+   "fieldtype": "Text Editor",
+   "label": "Other Details",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "images_section",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "image_1",
+   "fieldtype": "Attach Image",
+   "label": "Image 1"
+  },
+  {
+   "fieldname": "image_2",
+   "fieldtype": "Attach Image",
+   "label": "Image 2"
+  },
+  {
+   "fieldname": "rental_units_button",
+   "fieldtype": "Button",
+   "label": "Rental Units"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Building Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title_deed_expiry",
+   "fieldtype": "Date",
+   "label": "Title Deed Expiry"
+  },
+  {
+   "fieldname": "premise_no_1",
+   "fieldtype": "Data",
+   "label": "Premise No 1"
+  },
+  {
+   "fieldname": "premise_no_2",
+   "fieldtype": "Data",
+   "label": "Premise No 2"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "account_nos_section",
+   "fieldtype": "Section Break",
+   "label": "Account Nos"
+  },
+  {
+   "fieldname": "emicool_ac_no",
+   "fieldtype": "Data",
+   "label": "Emicool Ac No"
+  },
+  {
+   "fieldname": "dewa_ac_no",
+   "fieldtype": "Data",
+   "label": "Dewa Ac No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-01 13:32:35.907766",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Building",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "building_number, building_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

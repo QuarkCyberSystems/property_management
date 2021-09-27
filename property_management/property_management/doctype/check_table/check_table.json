@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "creation": "2021-09-01 11:45:56.455122",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "area",
+  "condition",
+  "description",
+  "job_description",
+  "cost"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area"
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "columns": 2,
+   "default": "Good",
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Condition",
+   "options": "Good\nDamaged\nMissing"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost"
+  },
+  {
+   "columns": 2,
+   "fieldname": "job_description",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Job Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-14 16:40:16.688056",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Check Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
