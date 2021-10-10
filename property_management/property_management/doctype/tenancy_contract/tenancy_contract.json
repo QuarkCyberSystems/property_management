@@ -9,11 +9,11 @@
  "field_order": [
   "customer",
   "status",
-  "rental_units",
+  "rental_units_qcs_1",
   "column_break_4",
   "company",
   "building",
-  "rental_units_section",
+  "rental_units_table",
   "sb_terms",
   "start_date",
   "cb_date",
@@ -65,7 +65,7 @@
    "in_standard_filter": 1,
    "label": "Status",
    "no_copy": 1,
-   "options": "Inactive\nActive"
+   "options": "\nInactive\nActive"
   },
   {
    "fieldname": "sb_terms",
@@ -206,17 +206,10 @@
    "label": "Terms"
   },
   {
-   "fieldname": "rental_units",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Rental Unit",
-   "options": "Rental Units"
-  },
-  {
    "fieldname": "pay_cycle",
    "fieldtype": "Select",
    "label": "Pay Cycle",
-   "options": "\n1\n2\n3\n4\n6\n12"
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12"
   },
   {
    "fieldname": "column_break_27",
@@ -244,11 +237,6 @@
    "label": "Grace Period"
   },
   {
-   "fieldname": "rental_units_section",
-   "fieldtype": "Table",
-   "options": "Multiple Units"
-  },
-  {
    "fieldname": "additional_terms",
    "fieldtype": "Table",
    "label": "Additional Terms",
@@ -258,7 +246,8 @@
    "fieldname": "building",
    "fieldtype": "Link",
    "label": "Building",
-   "options": "Building"
+   "options": "Building",
+   "reqd": 1
   },
   {
    "fieldname": "property_no",
@@ -274,11 +263,26 @@
    "fieldname": "ejari",
    "fieldtype": "Data",
    "label": "Ejari"
+  },
+  {
+   "fieldname": "rental_units_qcs_1",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Rental Unit",
+   "options": "Rental Units",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rental_units_table",
+   "fieldtype": "Table MultiSelect",
+   "label": "Rental Units",
+   "options": "Multiple Units",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-09-26 16:59:48.381173",
+ "modified": "2021-10-06 20:11:37.593609",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Tenancy Contract",

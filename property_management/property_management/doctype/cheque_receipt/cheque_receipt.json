@@ -17,6 +17,7 @@
   "column_break_6",
   "company",
   "transaction_date",
+  "rental_units_section",
   "contract_start",
   "contract_end",
   "no_of_payments",
@@ -43,11 +44,15 @@
    "options": "Customer"
   },
   {
+   "fetch_from": "tenancy_contract.location",
+   "fetch_if_empty": 1,
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
   },
   {
+   "fetch_from": "tenancy_contract.annual_rent",
+   "fetch_if_empty": 1,
    "fieldname": "rent_amount",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -55,6 +60,8 @@
    "reqd": 1
   },
   {
+   "fetch_from": "tenancy_contract.security_deposit",
+   "fetch_if_empty": 1,
    "fieldname": "security_deposit",
    "fieldtype": "Currency",
    "label": "Security Deposit"
@@ -70,18 +77,24 @@
    "label": "Transaction Date"
   },
   {
+   "fetch_from": "tenancy_contract.start_date",
+   "fetch_if_empty": 1,
    "fieldname": "contract_start",
    "fieldtype": "Date",
    "label": "Contract Start",
    "reqd": 1
   },
   {
+   "fetch_from": "tenancy_contract.end_date",
+   "fetch_if_empty": 1,
    "fieldname": "contract_end",
    "fieldtype": "Date",
    "label": "Contract End",
    "reqd": 1
   },
   {
+   "fetch_from": "tenancy_contract.pay_cycle",
+   "fetch_if_empty": 1,
    "fieldname": "no_of_payments",
    "fieldtype": "Data",
    "label": "No of Payments"
@@ -111,6 +124,8 @@
    "options": "Company"
   },
   {
+   "fetch_from": "tenancy_contract.building",
+   "fetch_if_empty": 1,
    "fieldname": "building_no",
    "fieldtype": "Link",
    "label": "Building No",
@@ -123,6 +138,8 @@
    "options": "Rental Units"
   },
   {
+   "fetch_from": "tenancy_contract.plot_no",
+   "fetch_if_empty": 1,
    "fieldname": "plot_no",
    "fieldtype": "Data",
    "label": "Plot No"
@@ -131,12 +148,19 @@
    "fieldname": "additional_documents",
    "fieldtype": "Text",
    "label": "Additional Documents"
+  },
+  {
+   "fetch_from": "tenancy_contract.rental_units_section",
+   "fetch_if_empty": 1,
+   "fieldname": "rental_units_section",
+   "fieldtype": "Table",
+   "options": "Multiple Units"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-09-21 12:15:05.181422",
+ "modified": "2021-10-10 16:36:48.529268",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Cheque Receipt",
@@ -182,6 +206,8 @@
    "write": 1
   },
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "email": 1,
    "export": 1,
@@ -189,6 +215,7 @@
    "read": 1,
    "report": 1,
    "role": "Accounts User",
+   "select": 1,
    "share": 1,
    "submit": 1,
    "write": 1

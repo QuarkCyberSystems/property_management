@@ -31,7 +31,6 @@
    "label": "Bill No"
   },
   {
-   "columns": 2,
    "fieldname": "bill_date",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -58,7 +57,7 @@
    "label": "Amount"
   },
   {
-   "columns": 1,
+   "columns": 3,
    "fieldname": "account",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -66,6 +65,7 @@
    "options": "Account"
   },
   {
+   "columns": 1,
    "fieldname": "supplier",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -75,7 +75,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-09-21 10:59:46.880141",
+ "modified": "2021-10-10 16:48:33.805339",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Petty Cash Claim Table",
