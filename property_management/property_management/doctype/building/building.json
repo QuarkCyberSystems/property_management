@@ -16,6 +16,9 @@
   "company",
   "title_deed_expiry",
   "column_break_4",
+  "location",
+  "owner_name",
+  "landlord_name",
   "premise_no_1",
   "premise_no_2",
   "city",
@@ -222,11 +225,28 @@
    "fieldname": "dewa_ac_no",
    "fieldtype": "Data",
    "label": "Dewa Ac No"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "owner_name",
+   "fieldtype": "Link",
+   "label": "Owner Name",
+   "options": "Owners and Landlords"
+  },
+  {
+   "fieldname": "landlord_name",
+   "fieldtype": "Link",
+   "label": "Landlord Name",
+   "options": "Owners and Landlords"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-09-01 13:32:35.907766",
+ "modified": "2021-10-20 09:52:16.510702",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Building",

@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "PCC-.####",
+ "autoname": "PCC-.serial_abbr.-.####",
  "creation": "2021-09-06 13:14:26.156492",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -8,7 +8,9 @@
  "field_order": [
   "posting_date",
   "company",
+  "serial_abbr",
   "employee",
+  "employee_name",
   "petty_cash_account",
   "section_break_4",
   "table_5",
@@ -63,7 +65,8 @@
    "fieldname": "petty_cash_account",
    "fieldtype": "Link",
    "label": "Petty Cash Account",
-   "options": "Account"
+   "options": "Account",
+   "permlevel": 1
   },
   {
    "fieldname": "total",
@@ -82,12 +85,25 @@
    "fieldname": "remarks",
    "fieldtype": "Text",
    "label": "Remarks"
+  },
+  {
+   "fetch_from": "company.abbr",
+   "fieldname": "serial_abbr",
+   "fieldtype": "Data",
+   "label": "Serial Abbr",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-09-14 14:53:22.283701",
+ "modified": "2022-02-15 08:18:24.392841",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Petty Cash Claim",
@@ -117,6 +133,7 @@
    "write": 1
   },
   {
+   "amend": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -148,6 +165,18 @@
    "read": 1,
    "report": 1,
    "role": "Projects User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
    "share": 1,
    "write": 1
   }

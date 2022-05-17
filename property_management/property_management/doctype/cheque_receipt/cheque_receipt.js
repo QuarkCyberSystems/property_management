@@ -6,3 +6,13 @@ frappe.ui.form.on('Cheque Receipt', {
 
 	// }
 });
+
+
+cur_frm.fields_dict["cr_table"].grid.get_field("account").get_query = function(doc) {
+	return {
+		filters: {
+			'company': doc.company
+		}
+
+	}
+}

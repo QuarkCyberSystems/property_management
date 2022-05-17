@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "CR-.MM.-.YY.-.####",
+ "autoname": "CR-.serial_abbr.-.YY.-.####",
  "creation": "2021-09-09 13:21:37.330784",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -16,6 +16,7 @@
   "security_deposit",
   "column_break_6",
   "company",
+  "serial_abbr",
   "transaction_date",
   "rental_units_section",
   "contract_start",
@@ -23,6 +24,8 @@
   "no_of_payments",
   "section_1",
   "cr_table",
+  "cheque_receipt_total",
+  "remarks",
   "additional_documents",
   "amended_from"
  ],
@@ -155,12 +158,29 @@
    "fieldname": "rental_units_section",
    "fieldtype": "Table",
    "options": "Multiple Units"
+  },
+  {
+   "fieldname": "cheque_receipt_total",
+   "fieldtype": "Currency",
+   "label": "Cheque Receipt Total"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "company.abbr",
+   "fieldname": "serial_abbr",
+   "fieldtype": "Data",
+   "label": "Serial Abbr",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-10 16:36:48.529268",
+ "modified": "2021-10-13 13:14:39.528356",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Cheque Receipt",

@@ -9,6 +9,7 @@
  "field_order": [
   "customer",
   "status",
+  "vacating_date",
   "rental_units_qcs_1",
   "column_break_4",
   "company",
@@ -100,6 +101,7 @@
    "options": "Industrial\nCommercial\nResidential"
   },
   {
+   "fetch_from": "building.owner_name",
    "fetch_if_empty": 1,
    "fieldname": "owner_name",
    "fieldtype": "Link",
@@ -107,6 +109,7 @@
    "options": "Owners and Landlords"
   },
   {
+   "fetch_from": "building.landlord_name",
    "fetch_if_empty": 1,
    "fieldname": "landlord_name",
    "fieldtype": "Link",
@@ -167,7 +170,7 @@
    "label": "Property Type"
   },
   {
-   "fetch_from": "rental_units.plot_no",
+   "fetch_from": "building.plot_no",
    "fieldname": "plot_no",
    "fieldtype": "Data",
    "label": "Plot No"
@@ -278,11 +281,16 @@
    "label": "Rental Units",
    "options": "Multiple Units",
    "reqd": 1
+  },
+  {
+   "fieldname": "vacating_date",
+   "fieldtype": "Date",
+   "label": "Vacating Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-06 20:11:37.593609",
+ "modified": "2021-10-20 09:53:37.302098",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Tenancy Contract",

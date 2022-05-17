@@ -93,7 +93,15 @@ doc_events = {
  	"Sales Invoice": {
  		"on_submit": "property_management.property_management.doctype.cheques.cheques.create_cheque"
  		
-	}
+	},
+    "Sales Order": {
+        "validate": "property_management.common.so_actuals_calculation",
+        "on_update": "property_management.common.so_actuals_calculation",
+        "on_change": "property_management.common.so_actuals_calculation"
+    },
+    "Purchase Invoice": {
+        "validate": "property_management.common.add_pi_items_so"
+    },
  }
 
 # Scheduled Tasks
