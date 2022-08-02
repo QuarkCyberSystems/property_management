@@ -1,0 +1,67 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-05-19 09:47:47.246524",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Property",
+ "links": [],
+ "modified": "2022-05-19 09:47:47.246524",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Property",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Building",
+   "link_to": "Building",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Rental Units",
+   "link_to": "Rental Units",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Tenancy Contract",
+   "link_to": "Tenancy Contract",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Cheques",
+   "link_to": "Cheques",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Move Checklist",
+   "link_to": "Move Checklist",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Issue",
+   "link_to": "Issue",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Material Request",
+   "link_to": "Material Request",
+   "type": "DocType"
+  }
+ ]
+}
