@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-04 12:24:28.747069",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "column_break_4",
+  "vehicle_owner_name",
+  "ssk_vehicle_id",
+  "vehicle_number_section",
+  "plate_number",
+  "plate_category",
+  "is_blacklisted",
+  "other_details_section",
+  "vehicle_manufacturer",
+  "vehicle_color",
+  "column_break_15",
+  "vehicle_model",
+  "year",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "vehicle_owner.vehicle_owner_name",
+   "fieldname": "vehicle_owner_name",
+   "fieldtype": "Data",
+   "label": "Vehicle Owner Name",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "ssk_vehicle_id",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "SSK Vehicle ID"
+  },
+  {
+   "fieldname": "vehicle_number_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Number"
+  },
+  {
+   "fieldname": "plate_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plate Number"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "plate_category",
+   "fieldtype": "Data",
+   "label": "Plate Category"
+  },
+  {
+   "fieldname": "is_blacklisted",
+   "fieldtype": "Select",
+   "label": "Is Blacklisted",
+   "options": "False\nTrue"
+  },
+  {
+   "fieldname": "other_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "vehicle_manufacturer",
+   "fieldtype": "Data",
+   "label": "Vehicle Manufacturer"
+  },
+  {
+   "fieldname": "vehicle_color",
+   "fieldtype": "Data",
+   "label": "Vehicle Color"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_model",
+   "fieldtype": "Data",
+   "label": "Vehicle Model"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-04 12:24:28.747069",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Tenant Vehicles",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "filed:community_name",
+ "creation": "2022-11-04 12:59:09.850337",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "community_name",
+  "territory",
+  "section_break_3",
+  "community_manager",
+  "community_type",
+  "community_size",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "community_name",
+   "fieldtype": "Data",
+   "label": "Community Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "community_manager",
+   "fieldtype": "Link",
+   "label": "Community Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "community_type",
+   "fieldtype": "Data",
+   "label": "Community Type"
+  },
+  {
+   "fieldname": "community_size",
+   "fieldtype": "Data",
+   "label": "Community Size"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-04 12:59:09.850337",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Community",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

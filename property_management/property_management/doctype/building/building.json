@@ -19,6 +19,7 @@
   "location",
   "owner_name",
   "landlord_name",
+  "premise_no",
   "premise_no_1",
   "premise_no_2",
   "city",
@@ -82,9 +83,10 @@
   },
   {
    "fieldname": "city",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "City"
+   "label": "Territory",
+   "options": "Territory"
   },
   {
    "fieldname": "plot_no",
@@ -203,11 +205,13 @@
   {
    "fieldname": "premise_no_1",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Premise No 1"
   },
   {
    "fieldname": "premise_no_2",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Premise No 2"
   },
   {
@@ -242,14 +246,20 @@
    "fieldtype": "Link",
    "label": "Landlord Name",
    "options": "Owners and Landlords"
+  },
+  {
+   "fieldname": "premise_no",
+   "fieldtype": "Data",
+   "label": "Premise No"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-20 09:52:16.510702",
+ "modified": "2024-10-22 13:24:31.322494",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Building",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -280,5 +290,6 @@
  "search_fields": "building_number, building_name",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

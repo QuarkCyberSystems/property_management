@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{MM}-.#####",
+ "creation": "2022-11-04 12:59:58.025531",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "device_location",
+  "community",
+  "device_type",
+  "device_brand",
+  "vendors_section",
+  "device_vendor",
+  "service_partner"
+ ],
+ "fields": [
+  {
+   "fieldname": "device_location",
+   "fieldtype": "Data",
+   "label": "Device Location"
+  },
+  {
+   "fieldname": "community",
+   "fieldtype": "Link",
+   "label": "Community",
+   "options": "Community"
+  },
+  {
+   "fieldname": "device_type",
+   "fieldtype": "Select",
+   "label": "Device Type",
+   "options": "ANPR\nAccess Control\nFacial Recognition"
+  },
+  {
+   "fieldname": "device_brand",
+   "fieldtype": "Select",
+   "label": "Device Brand",
+   "options": "SSK\nFalcon"
+  },
+  {
+   "fieldname": "vendors_section",
+   "fieldtype": "Section Break",
+   "label": "Vendors"
+  },
+  {
+   "fieldname": "device_vendor",
+   "fieldtype": "Link",
+   "label": "Device Vendor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "service_partner",
+   "fieldtype": "Link",
+   "label": "Service Partner",
+   "options": "Supplier"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-04 13:00:32.166616",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "IOT Devices",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -33,6 +33,7 @@
   "column_break_19",
   "building_name",
   "location",
+  "territory",
   "property_no",
   "premise_no",
   "property_size",
@@ -123,7 +124,7 @@
    "label": "Tenant Name"
   },
   {
-   "fetch_from": "customer.contact_email",
+   "fetch_from": "customer.email_id",
    "fieldname": "tenant_email",
    "fieldtype": "Data",
    "label": "Tenant Email"
@@ -134,7 +135,7 @@
    "label": "Landlord Email"
   },
   {
-   "fetch_from": "customer.contact_no",
+   "fetch_from": "customer.mobile_no",
    "fieldname": "tenant_phone",
    "fieldtype": "Data",
    "label": "Tenant Phone"
@@ -152,7 +153,7 @@
    "label": "Building Name"
   },
   {
-   "fetch_from": "rental_units.location",
+   "fetch_from": "building.location",
    "fetch_if_empty": 1,
    "fieldname": "location",
    "fieldtype": "Data",
@@ -164,7 +165,7 @@
    "label": "Property Size"
   },
   {
-   "fetch_from": "rental_units.property_type",
+   "fetch_from": "building.building_type",
    "fieldname": "property_type",
    "fieldtype": "Data",
    "label": "Property Type"
@@ -253,11 +254,13 @@
    "reqd": 1
   },
   {
+   "fetch_from": "building.building_number",
    "fieldname": "property_no",
    "fieldtype": "Data",
    "label": "Property No"
   },
   {
+   "fetch_from": "building.premise_no",
    "fieldname": "premise_no",
    "fieldtype": "Data",
    "label": "Premise No"
@@ -286,14 +289,22 @@
    "fieldname": "vacating_date",
    "fieldtype": "Date",
    "label": "Vacating Date"
+  },
+  {
+   "fetch_from": "building.city",
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-20 09:53:37.302098",
+ "modified": "2024-10-22 13:27:45.717373",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Tenancy Contract",
+ "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {
@@ -346,6 +357,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "title_field": "customer",
  "track_changes": 1
 }
