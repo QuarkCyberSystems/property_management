@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Con-{MM}-{YY}-{####}",
+ "creation": "2024-10-20 18:35:57.207420",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rental_unit",
+  "owner_name",
+  "location",
+  "property_type",
+  "building_name",
+  "property_no",
+  "plot_no",
+  "column_break_artn",
+  "date",
+  "consumption_section",
+  "water_consumption",
+  "hot_water_consumption",
+  "electricity_consumption",
+  "column_break_gkhr",
+  "water_consumptionsingle_unit",
+  "electricity_consumptionsingle_unit"
+ ],
+ "fields": [
+  {
+   "fieldname": "rental_unit",
+   "fieldtype": "Link",
+   "label": "Rental Unit",
+   "options": "Rental Units"
+  },
+  {
+   "fetch_from": "rental_unit.owner_name",
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Owner Name"
+  },
+  {
+   "fetch_from": "rental_unit.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fetch_from": "rental_unit.property_type",
+   "fieldname": "property_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Property Type"
+  },
+  {
+   "fetch_from": "rental_unit.building_name",
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building Name"
+  },
+  {
+   "fetch_from": "rental_unit.property_no",
+   "fieldname": "property_no",
+   "fieldtype": "Data",
+   "label": "Property No"
+  },
+  {
+   "fetch_from": "rental_unit.plot_no",
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No"
+  },
+  {
+   "fieldname": "column_break_artn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "consumption_section",
+   "fieldtype": "Section Break",
+   "label": "Consumption"
+  },
+  {
+   "fieldname": "water_consumption",
+   "fieldtype": "Float",
+   "label": "Water Consumption",
+   "reqd": 1
+  },
+  {
+   "fieldname": "electricity_consumption",
+   "fieldtype": "Float",
+   "label": "Electricity Consumption",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gkhr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "water_consumptionsingle_unit",
+   "fieldtype": "Currency",
+   "label": "Water Consumption(Single Unit)"
+  },
+  {
+   "fieldname": "electricity_consumptionsingle_unit",
+   "fieldtype": "Currency",
+   "label": "Electricity Consumption(Single Unit)"
+  },
+  {
+   "fieldname": "hot_water_consumption",
+   "fieldtype": "Float",
+   "label": "Hot Water consumption",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-21 08:59:01.460078",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Consumption",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
