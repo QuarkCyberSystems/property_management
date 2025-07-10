@@ -30,6 +30,7 @@
   "no_of_floors",
   "total_no_of_units",
   "total_car_spaces",
+  "building_no",
   "column_break_6",
   "no_of_studio",
   "no_1bhk",
@@ -242,14 +243,20 @@
    "fieldtype": "Link",
    "label": "Landlord Name",
    "options": "Owners and Landlords"
+  },
+  {
+   "fieldname": "building_no",
+   "fieldtype": "Data",
+   "label": "building_no"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-20 09:52:16.510702",
+ "modified": "2024-10-18 11:37:54.759310",
  "modified_by": "Administrator",
  "module": "Property Management",
  "name": "Building",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -280,5 +287,6 @@
  "search_fields": "building_number, building_name",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

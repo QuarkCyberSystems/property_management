@@ -4,7 +4,7 @@ import frappe, requests, urllib3, json, datetime, dateutil.parser, urllib, dateu
 from frappe.model.document import Document
 from frappe.model.naming import make_autoname
 from frappe.utils import flt, add_days, date_diff, get_request_site_address, formatdate, getdate, month_diff, today
-from erpnext.hr.doctype.employee.employee import get_holiday_list_for_employee
+from erpnext.setup.doctype.employee.employee import get_holiday_list_for_employee
 from erpnext.accounts.utils import get_balance_on
 from json import dumps
 from datetime import date, timedelta
